@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>Stahlwaren HDI</title>
+		<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+		<link rel="stylesheet" href="../css/loeffel_messer.css">
+		<script src="../js/messer_loeffel_script.js"></script>
+ 
+	</head>
+	<body onload="currentSlide(1)">
+
+		<!--Kopfzeile & Navigationsmenü--> 
+		<h1><img src="../images/hdi_logo.png" alt="Stahlwaren HDI Deutschland Logo" style="float:right;width:121px;height:50px;">Stahlwaren HDI Deutschland</h1>
+
+		<div class="navbar">
+			<a class="nav" href="index.htm">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn">Produkte </button>
+				<div class="dropdown-content">
+					<a class="nav" href="produkt_messer.htm">Messer</a>
+					<a class="nav" href="produkt_loeffel.htm">L&#246;ffel</a>
+				</div>
+			</div> 
+			<a class="nav" href="kontakt.htm">Kontakt</a>
+			<a class="nav" href="impressum.htm">Impressum</a>
+  		</div>
+
+		<div class="backbutton">
+			<a  class="back" href="produkt_loeffel.htm" target="_self">Zur&#252;ck</a>
+		</div>
+
+		<h2 class="headline"> Metalll&#246;ffel</h2>
+
+		<p class="stdtext"> Wir bieten Ihnen eine große Auswahl handgemachter Metall&#246;ffel</p>
+
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+				<div class="numbertext">1 / 4</div>
+				<img src="../images/metallloeffel2.jpg" alt="Metalll&#246;ffel Classic" style="width:640px;height:800px" onclick="showproduktmodal1()">
+				<div class="captext">Metall&#246ffel "Classic".</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">2 / 4</div>
+				<img src="../images/metallloeffel3.jpg" alt="Metalll&#246;ffel Verziert" style="width:640px;height:800px" onclick="showproduktmodal2()">
+				<div class="captext">Metall&#246ffel Verziert (Links:"Twisted", Mitte:"Flower", Rechts:"Flowerette)"</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">3 / 4</div>
+				<img src="../images/metallloeffel4.jpg" alt="Matte Black" style="width:640px;height:800px" onclick="showproduktmodal3()">
+				<div class="captext">Matte Black Finish</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">4 / 4</div>
+				<img src="../images/metallloeffel5.jpg" alt="Rainbow" style="width:640px;height:800px" onclick="showproduktmodal4()">
+				<div class="captext">Rainbow Finish</div>
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&#9664;</a>
+			<a class="next" onclick="plusSlides(1)">&#9658;</a>
+			
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span> 
+				<span class="dot" onclick="currentSlide(2)"></span> 
+				<span class="dot" onclick="currentSlide(3)"></span> 
+				<span class="dot" onclick="currentSlide(4)"></span> 
+			</div>
+		</div>
+		<div class="VKtabelle">
+			<table>
+				<tr>	
+					<th>Artikel</th>
+					<th>Preis/Stk. in €</th>
+					<th>Preis/Stk. <br>ab 10 Stk. in €</th>
+				</tr>
+				<tr>	
+					<td>Metalll&#246ffel "Classic"    <button class="produktmodalbtn" id="produktmodalbtn1" onclick="showproduktmodal1()">&#10068;</button></td>
+					<td>1,09 &euro;</td>
+					<td>0,89 &euro;</td>
+				</tr>
+				<tr> 	
+					<td>Metalll&#246ffel Verziert "Twisted"    <button class="produktmodalbtn" id="produktmodalbtn2" onclick="showproduktmodal2()">&#10068;</button></td>
+					<td>1,29 &euro;</td>
+					<td>1,09 &euro;</td>
+				</tr>
+				<tr> 	
+					<td>Metalll&#246ffel Verziert "Flower"    <button class="produktmodalbtn" id="produktmodalbtn2" onclick="showproduktmodal2()">&#10068;</button></td>
+					<td>1,49 &euro;</td>
+					<td>1,29 &euro;</td>
+				</tr>
+				<tr> 	
+					<td>Metalll&#246ffel Verziert "Flowerette"    <button class="produktmodalbtn" id="produktmodalbtn2" onclick="showproduktmodal2()">&#10068;</button></td>
+					<td>1,39 &euro;</td>
+					<td>1,19 &euro;</td>
+				</tr>
+				<tr> 	
+					<td>Matte Black Finish    <button class="produktmodalbtn" id="produktmodalbtn3" onclick="showproduktmodal3()">&#10068;</button></td>
+					<td>+0,29 &euro;</td>
+					<td>+0,19 &euro;</td>
+				</tr>
+				<tr> 	
+					<td>Rainbow Finish    <button class="produktmodalbtn" id="produktmodalbtn4" onclick="showproduktmodal4()">&#10068;</button></td>
+					<td>+0,49 &euro;</td>
+					<td>+0,29 &euro;</td>
+				</tr>
+			</table>
+		</div>
+		
+		
+		<div id="produktmodal1" class="produktmodal">
+			<div class="produktmodalInhalt">
+				<span class="modalclose" onclick="closeproduktmodal1()">&times;</span>
+				<img src="..\images\metallloeffelmodal1.jpg" alt="Metalll&#246;ffel Classic" class="modalimg">
+				<h1 class="modalheadline">Metalll&#246;ffel "Classic"</h1>
+				<p class="modaltext">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+				sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+				At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+			</div>
+		</div>	
+		
+		<div id="produktmodal2" class="produktmodal">
+			<div class="produktmodalInhalt">
+				<span class="modalclose" onclick="closeproduktmodal2()">&times;</span>
+				<img src="..\images\metallloeffelmodal2.jpg" alt="Metalll&#246;ffel Verziert" class="modalimg">
+				<h1 class="modalheadline">Metalll&#246;ffel Verziert</h1>
+				<p class="modaltext">"Twisted":<br> Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+				sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. <br><br>"Flower":<br> Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+				At vero eos et accusam et justo duo dolores et ea rebum.<br><br>"Flowerette":<br>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+			</div>
+		</div>	
+	
+		<div id="produktmodal3" class="produktmodal">
+			<div class="produktmodalInhalt">
+				<span class="modalclose" onclick="closeproduktmodal3()">&times;</span>
+				<img src="..\images\metallloeffelmodal3.jpg" alt="Metalll&#246;ffel Matte Black" class="modalimg">
+				<h1 class="modalheadline">Matte Black Finish</h1>
+				<p class="modaltext">Ein etwas anderes lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+				sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+				At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+			</div>
+		</div>	
+	
+		<div id="produktmodal4" class="produktmodal">
+			<div class="produktmodalInhalt">
+				<span class="modalclose" onclick="closeproduktmodal4()">&times;</span>
+				<img src="..\images\metallloeffelmodal4.jpg" alt="Metalll&#246;ffel Rainbow" class="modalimg">
+				<h1 class="modalheadline">Rainbow Finish</h1>
+				<p class="modaltext">Double rainbow all the way across the sky! Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+				sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+				At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+			</div>
+		</div>	
+		<br><br><br>
+	
+		<footer>
+			<p> &#169;2022 Stahlwaren HDI Deutschland </p>
+		</footer>
+	</body>
+</html>

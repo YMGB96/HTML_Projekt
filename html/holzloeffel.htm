@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>Stahlwaren HDI</title>
+		<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+		<link rel="stylesheet" href="../css/loeffel_messer.css">
+		<script src="../js/messer_loeffel_script.js"></script>
+ 
+	</head>
+	<body onload="currentSlide(1)">
+
+		<!--Kopfzeile & Navigationsmenü--> 
+		<h1><img src="../images/hdi_logo.png" alt="Stahlwaren HDI Deutschland Logo" style="float:right;width:121px;height:50px;">Stahlwaren HDI Deutschland</h1>
+
+		<div class="navbar">
+			<a class="nav" href="index.htm">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn">Produkte </button>
+				<div class="dropdown-content">
+					<a class="nav" href="produkt_messer.htm">Messer</a>
+					<a class="nav" href="produkt_loeffel.htm">L&#246;ffel</a>
+				</div>
+			</div> 
+			<a class="nav" href="kontakt.htm">Kontakt</a>
+			<a class="nav" href="impressum.htm">Impressum</a>
+  		</div>
+		
+		<div class="backbutton">
+			<a  class="back" href="produkt_loeffel.htm" target="_self">Zur&#252;ck</a>
+		</div>
+
+		<h2 class="headline"> Holzl&#246;ffel </h2>
+
+		<p class="stdtext"> Wir bieten Ihnen eine große Auswahl handgemachter Holzl&#246;ffel</p>
+
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+				<div class="numbertext">1 / 4</div>
+				<img src="../images/holzloeffel2.jpg" alt="Holzl&#246;ffel Teatime" style="width:640px;height:800px" onclick="showproduktmodal1()">
+				<div class="captext">Holzl&#246ffel "Teatime"</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">2 / 4</div>
+				<img src="../images/holzloeffel3.jpg" alt="Holzl&#246;ffel Kochen wie Oma" style="width:640px;height:800px" onclick="showproduktmodal2()">
+				<div class="captext">Holzl&#246ffel "Kochen wie Oma"</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">3 / 4</div>
+				<img src="../images/holzloeffel4.jpg" alt="Holzl&#246;ffel Short and Stout" style="width:640px;height:800px" onclick="showproduktmodal3()">
+				<div class="captext">Holzl&#246ffel "Short and Stout"</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">4 / 4</div>
+				<img src="../images/holzloeffel5.jpg" alt="Holzl&#246;ffel Sweet as Honey" style="width:640px;height:800px" onclick="showproduktmodal4()">
+				<div class="captext">Holzl&#246ffel "Sweet as Honey"</div>
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&#9664;</a>
+			<a class="next" onclick="plusSlides(1)">&#9658;</a>
+			
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span> 
+				<span class="dot" onclick="currentSlide(2)"></span> 
+				<span class="dot" onclick="currentSlide(3)"></span> 
+				<span class="dot" onclick="currentSlide(4)"></span> 
+			</div>
+		</div>
+		<br>
+
+		
+		<div class="VKtabelle">
+			<table>
+				<tr>	
+					<th>Artikel</th>
+					<th>Preis/Stk. in €</th>
+					<th>Preis/Stk. <br>ab 10 Stk. in €</th>
+				</tr>
+				<tr>	
+					<td>Holzl&#246ffel "Teatime" <br>aus Eichenholz    <button class="produktmodalbtn" id="produktmodalbtn1" onclick="showproduktmodal1()">&#10068;</button></td>
+					<td>1,19 &euro;</td>
+					<td>0,99 &euro;</td>
+				</tr>
+				<tr> 	
+					<td>Holzl&#246ffel "Teatime" <br>aus Ebenholz    <button class="produktmodalbtn" id="produktmodalbtn1" onclick="showproduktmodal1()">&#10068;</button></td>
+					<td>1,29 &euro;</td>
+					<td>1,09 &euro;</td>
+				</tr>
+				<tr> 	
+					<td>Holzl&#246ffel "Kochen wie Oma" <br>aus Eichenholz    <button class="produktmodalbtn" id="produktmodalbtn2" onclick="showproduktmodal2()">&#10068;</button></td>
+					<td>1,39 &euro;</td>
+					<td>1,19 &euro;</td>
+				</tr>
+				<tr> 	
+					<td>Holzl&#246ffel "Kochen wie Oma"<br>aus Ebenholz    <button class="produktmodalbtn" id="produktmodalbtn2" onclick="showproduktmodal2()">&#10068;</button></td>
+					<td>1,49 &euro;</td>
+					<td>1,29 &euro;</td>
+				</tr>
+				<tr> 	
+					<td>Holzl&#246ffel "Short and Stout"<br>aus Eichenholz    <button class="produktmodalbtn" id="produktmodalbtn3" onclick="showproduktmodal3()">&#10068;</button></td>
+					<td>1,29 &euro;</td>
+					<td>1,09 &euro;</td>
+				</tr>
+				<tr> 	
+					<td>Holzl&#246ffel "Short and Stout"<br>aus Ebenholz    <button class="produktmodalbtn" id="produktmodalbtn3" onclick="showproduktmodal3()">&#10068;</button></td>
+					<td>1,39 &euro;</td>
+					<td>1,19 &euro;</td>
+				</tr>
+				<tr> 	
+					<td>Holzl&#246ffel "Sweet as Honey"<br>aus Eichenholz    <button class="produktmodalbtn" id="produktmodalbtn4" onclick="showproduktmodal4()">&#10068;</button></td>
+					<td>1,29 &euro;</td>
+					<td>1,09 &euro;</td>
+				</tr>
+				<tr> 	
+					<td>Holzl&#246ffel "Sweet as Honey"<br>aus Ebenholz    <button class="produktmodalbtn" id="produktmodalbtn4" onclick="showproduktmodal4()">&#10068;</button></td>
+					<td>1,39 &euro;</td>
+					<td>1,19 &euro;</td>
+				</tr>
+			</table>
+		</div>
+		<div id="produktmodal1" class="produktmodal">
+			<div class="produktmodalInhalt">
+				<span class="modalclose" onclick="closeproduktmodal1()">&times;</span>
+				<img src="..\images\holzloeffelmodal1.jpg" alt="Holzl&#246;ffel Teatime" class="modalimg">
+				<h1 class="modalheadline">Holzl&#246;ffel "Teatime"</h1>
+				<p class="modaltext">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+				sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+				At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+			</div>
+		</div>	
+		
+		<div id="produktmodal2" class="produktmodal">
+			<div class="produktmodalInhalt">
+				<span class="modalclose" onclick="closeproduktmodal2()">&times;</span>
+				<img src="..\images\holzloeffelmodal2.jpg" alt="Holzl&#246;ffel Kochen wie Oma" class="modalimg">
+				<h1 class="modalheadline">Holzl&#246;ffel "Kochen wie bei Oma"</h1>
+				<p class="modaltext">Yet another Lorem ipsum dolor sit amet, consetetur sadipscing elitr. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+				sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+				At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+			</div>
+		</div>	
+	
+		<div id="produktmodal3" class="produktmodal">
+			<div class="produktmodalInhalt">
+				<span class="modalclose" onclick="closeproduktmodal3()">&times;</span>
+				<img src="..\images\holzloeffelmodal3.jpg" alt="Holzl&#246;ffel Short and Stout" class="modalimg">
+				<h1 class="modalheadline">Holzl&#246;ffel "Short and Stout"</h1>
+				<p class="modaltext">Ein etwas anderes lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+				sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+				At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+			</div>
+		</div>	
+	
+		<div id="produktmodal4" class="produktmodal">
+			<div class="produktmodalInhalt">
+				<span class="modalclose" onclick="closeproduktmodal4()">&times;</span>
+				<img src="..\images\holzloeffelmodal4.jpg" alt="Honeyl&#246;ffel Sweet as Honey" class="modalimg">
+				<h1 class="modalheadline">Holzl&#246;ffel "Sweet as Honey"</h1>
+				<p class="modaltext">Sugar (do dodo do doo doo). Oh, Honey, honey! Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+				sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+				At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+			</div>
+		</div>	
+		
+		<br><br><br>
+		<footer>
+			<p> &#169;2022 Stahlwaren HDI Deutschland </p>
+		</footer>
+</body>
+</html>
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>Stahlwaren HDI</title>
+		<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+		<link rel="stylesheet" href="../css/loeffel_messer.css">
+		<script src="../js/messer_loeffel_script.js"></script>
+	
+		
+	</head>
+	<body onload="OhneAGB()">
+		<!--Kopfzeile & Navigationsmenü--> 
+		<h1><img src="../images/hdi_logo.png" alt="Stahlwaren HDI Deutschland Logo" style="float:right;width:121px;height:50px;">Stahlwaren HDI Deutschland</h1>
+
+		<div class="navbar">
+			<a class="nav" href="index.htm">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn">Produkte </button>
+				<div class="dropdown-content">
+					<a class="nav" href="produkt_messer.htm">Messer</a>
+					<a class="nav" href="produkt_loeffel.htm">L&#246;ffel</a>
+				</div>
+			</div> 
+			<a class="nav" href="kontakt.htm">Kontakt</a>
+			<a class="nav" href="impressum.htm">Impressum</a>
+  		</div>
+
+		<h2 class="headline"> Kontakt </h2>
+
+		<p class="stdtext"> Sie m&#246;chten Kontakt mit uns Aufnehmen?<br> Dann nutzen Sie bitte dieses Formular:</p> 	
+	
+		<form class="kontaktlabel">
+			<label for="Grund">Grund</label>
+			<select name="Grund" id="kontaktgrund" class="kontakt">
+				<option value="_produktanfrage">Produktanfrage</option>
+				<option value="_beschwerde">Beschwerde</option>
+				<option value="_ruecksendung">R&#252;cksendung</option>
+				<option value="_FragenAnregungen">Allgemeine Fragen/Anregungen</option>
+			</select>
+			<br><br>
+			<label for="Nname">Nachname</label>
+			<input class="kontakt" type="text" id="Nname" name="Nachname" placeholder="Ihr Nachname..." required>
+			<br><br>
+			<label for="Vname">Vorname</label>
+			<input class="kontakt" type="text" id="Vname" name="Vorname" placeholder="Ihr Vorname..." required>
+			<br><br>
+			<label for="Mail">E-Mail</label>
+			<input class="kontakt" type="text" id="Mail" name="Mail" placeholder="Ihre Mailadresse..." required>
+			<br><br>
+			<label for="Subject">Anliegen</label>
+			<textarea id="Subject" name="Subject" placeholder="Ihr Anliegen..." style="height:200px;width:70%;font-size:24px;font-family:arial;" required></textarea>
+			<br><br>
+			<input type="checkbox" id="AGB" name="AGB" onchange="Zustimmung()"> Ich stimme den geltenden <a href="AGB.htm" target="_blank">AGBs</a> zu.
+			<br><br>
+			<input class="kontakt" type="submit" name="submit" id="submit" value="Senden" onclick="kontaktfunction()">
+			<p class="stdtext"> Sie k&#246;nnen uns auch gerne telefonisch erreichen:<br> (+49)867-5309  <br>(Montags-Freitags, 8:00-18:00 Uhr)</p>
+		</form>
+		<br><br><br>
+		<footer>
+			<p> &#169;2022 Stahlwaren HDI Deutschland </p>
+		</footer>
+	</body> 
+</html>
